@@ -1,0 +1,19 @@
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./base/common";
+@import "./base/container";
+@import "./base/overlay";
+
+@import "./components/header";
+
+@import "./components/main";
+@import "./components/features";
+@import "./components/offer";
+@import "./components/team";
+@import "./components/companies";
+
+@import "./components/footer";
+
+@import "./base/backdrop";
+@import "./components/modal"
+
