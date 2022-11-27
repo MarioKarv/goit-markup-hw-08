@@ -18,25 +18,66 @@
   <body>
     <header class="header">
       <div class="container header__main">
-        <nav class="header__nav">
+        <div class="header__mobileopen">
           <a href="./index.html" class="header__logo"><span class="web">Web</span>Studio</a>
+          <button type="button" class="header__menu-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+            <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+              <use class="header__icon-menu" href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__menu">
           <ul class="header__site-nav list">
-            <li class="header__items"><a href="./index.html" class="header__link">Студія</a></li>
-            <!--pointers-->
-            <li class="header__items"><a href="./portfolio.html" class="header__link header__link--current">Портфоліо</a></li>
+            <li class="header__items">
+              <a href="./index.html" class="header__link header__link--current">Студія</a>
+            </li>
+            <li class="header__items">
+              <a href="./portfolio.html" class="header__link">Портфоліо</a>
+            </li>
             <li class="header__items"><a href="" class="header__link">Контакти</a></li>
           </ul>
-        </nav>
-        <ul class="header__contacts list">
-          <li class="header__item">
-            <a href="mailto:info@devstudio.com" class="header__meltel">
-              <svg width="16px" height="12px" class="header__icons">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
+          <ul class="header__contacts list">
+            <li class="header__item">
+              <a href="mailto:info@devstudio.com" class="header__meltel">
+                <svg width="16px" height="12px" class="header__icons">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header__item">
+              <a href="tel:+380961111111" class="header__meltel">
+                <svg width="10px" height="16px" class="header__icons">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+      </div>        
+        </div>
+    </header>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="header__menu-button js-close-menu">
+        <svg width="40px" height="40px" aria-label="Перемикач мобільного меню">
+          <use class="header__icon-cross" href="./images/icons.svg#closehead"></use>
+        </svg>
+      </button>
+
+      <div class="header__mobile-menu">
+        <ul class="header__site-nav list">
+          <li class="header__items">
+            <a href="./index.html" class="header__link header__link--current">Студія</a>
           </li>
-          <!--pointers-->
+            <!--pointers-->
+          <li class="header__items">
+            <a href="./portfolio.html" class="header__link">Портфоліо</a>
+          </li>
+          <li class="header__items"><a href="" class="header__link">Контакти</a></li>
+        </ul>
+        <ul class="header__contacts list">
           <li class="header__item">
             <a href="tel:+380961111111" class="header__meltel">
               <svg width="10px" height="16px" class="header__icons">
@@ -45,9 +86,24 @@
               +38 096 111 11 11</a
             >
           </li>
+          <li class="header__item">
+            <a href="mailto:info@devstudio.com" class="header__meltel header__mel">
+              <svg width="16px" height="12px" class="header__icons">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <!--pointers-->
+        </ul>
+        <ul class="header__social-menu list">
+          <li class="header__socials-item"><a href="" class="header__social-item">Instagram</a></li>
+          <li class="header__socials-item"><a href="" class="header__social-item">Twitter</a></li>
+          <li class="header__socials-item"><a href="" class="header__social-item">Facebook</a></li>
+          <li class="header__socials-item"><a href="" class="header__social-item">LinkedIn</a></li>
         </ul>
       </div>
-    </header>
+    </div>
     <main>
       <section class="section buttons">
         <div class="container">
@@ -300,5 +356,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
