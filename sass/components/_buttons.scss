@@ -1,6 +1,7 @@
 .buttons__buttons {
   padding: 6px 22px;
   display: inline-block;
+  min-width: 73px;
   border-radius: 4px;
   border: var(--button);
   color: var(--title);
@@ -39,9 +40,9 @@
 }
 
 .buttons__list {
-  width: 321px;
   margin-bottom: 40px;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
+  justify-content: center;
   row-gap: 15px;
   @media screen and (min-width: 758px) {
     width: 100%;
