@@ -41,8 +41,8 @@
 
 .buttons__list {
   margin-bottom: 40px;
-  flex-wrap: nowrap;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   row-gap: 15px;
   @media screen and (min-width: 758px) {
     width: 100%;
@@ -50,6 +50,7 @@
     margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
     width: 100%;
     justify-content: center;
     margin-bottom: 50px;

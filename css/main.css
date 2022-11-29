@@ -147,6 +147,11 @@ textarea {
   background-size: cover;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url(../images/heromobile2x.jpg);
+  }
+}
 @media screen and (min-width: 767px) {
   .overlay {
     max-width: 1600px;
@@ -160,6 +165,11 @@ textarea {
     background-size: cover;
   }
 }
+@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url(../images/herotablet2x.jpg);
+  }
+}
 @media screen and (min-width: 1199px) {
   .overlay {
     max-width: 1600px;
@@ -171,6 +181,11 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+}
+@media screen and (min-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 1199px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url(../images/herodesktop2x.jpg);
   }
 }
 .header {
@@ -699,8 +714,18 @@ textarea {
 
 .team__picture {
   display: block;
-  max-width: 100%;
   height: auto;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .team__picture {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__picture {
+    width: 270px;
+  }
 }
 
 .team__position {

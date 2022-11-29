@@ -509,11 +509,11 @@ textarea {
 
 .buttons__list {
   margin-bottom: 40px;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   row-gap: 15px;
 }
 @media screen and (min-width: 758px) {
@@ -527,6 +527,8 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .buttons__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -537,8 +539,18 @@ textarea {
 
 .product__picture {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+}
+@media screen and (min-width: 768px) {
+  .product__picture {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__picture {
+    width: 370px;
+  }
 }
 
 .product__description-title {

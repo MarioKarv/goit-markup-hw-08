@@ -10,14 +10,14 @@
   background-size: cover;
 }
 
-// @media (min-device-pixel-ratio: 2),
-//   (-webkit-min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-//   .overlay {
-//     background-image: url('photo@2x.png');
-//   }
-// }
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url(../images/heromobile2x.jpg);
+  }
+}
 
 @media screen and (min-width: 767px) {
   .overlay {
@@ -31,14 +31,14 @@
     background-position: center;
     background-size: cover;
   }
-//   @media (min-device-pixel-ratio: 2),
-//     (-webkit-min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     .overlay {
-//       background-image: url('photo@2x.png');
-//     }
-//   }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url(../images/herotablet2x.jpg);
+    }
+  }
 }
 
 @media screen and (min-width: 1199px) {
@@ -53,12 +53,12 @@
     background-position: center;
     background-size: cover;
   }
-//   @media (min-device-pixel-ratio: 2),
-//     (-webkit-min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     .overlay {
-//       background-image: url('photo@2x.png');
-//     }
-//   }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url(../images/herodesktop2x.jpg);
+    }
+  }
 }
