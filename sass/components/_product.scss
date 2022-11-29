@@ -36,6 +36,7 @@
 
   @media screen and (min-width: 768px) {
     width: 354px;
+    // flex-grow: 1;
     &.first {
       padding-bottom: 56px;
     }
@@ -62,6 +63,7 @@
 
   @media screen and (min-width: 768px) {
     width: 354px;
+    
     &:nth-child(2n + 1) {
       margin-right: 30px;
     }
