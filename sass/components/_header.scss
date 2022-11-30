@@ -24,33 +24,35 @@
 
 .header__menu-button {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   margin: 0;
   padding: 0;
   border: none;
   background-color: var(--white);
   &:hover .header__icon-menu {
-      fill: var(--accent-color);
+    fill: var(--accent-color);
+  }
+
+  &:focus .header__icon-menu {
+    fill: var(--accent-color);
+  }
+
+  &:hover .header__icon-cross {
+    fill: var(--accent-color);
+  }
+
+  &:focus .header__icon-cross {
+    fill: var(--accent-color);
+  }
+  @media (min-width: 768px) {
+    & {
+      display: none;
     }
-  
-    &:focus .header__icon-menu {
-      fill: var(--accent-color);
-    }
-  
-    &:hover .header__icon-cross {
-      fill: var(--accent-color);
-    }
-  
-    &:focus .header__icon-cross {
-      fill: var(--accent-color);
-    }
-        @media (min-width: 768px) {
-          & {
-            display: none;
-          }
-        }
+  }
 }
-
-
 
 .header__icon-menu,
 .header__icon-cross {
@@ -71,26 +73,22 @@
   transform: translateY(-100%);
   transition: transform var(--transition-duration) var(--transition-timing-function);
   &.is-open {
-      transform: translateY(0);
-    }
-  
-    & .header__menu-button {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      color: var(--black);
-    }
+    transform: translateY(0);
+  }
+
+  & .header__menu-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: var(--black);
+  }
 }
-
-
 
 @media (max-width: 767px) {
   .header__menu {
     display: none;
   }
 }
-
-
 
 .header__logo {
   color: var(--black);
@@ -107,14 +105,19 @@
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.2;
+    margin-top: 0;
+      margin-bottom: 0;
   }
 }
 
 .header__site-nav {
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 93px;
+    margin-left: 88px;
   }
+    @media screen and (min-width: 1200px) {
+      margin-left: 92px;
+    }
 }
 
 /* .site-nav li{
@@ -183,7 +186,7 @@
 
 .header__contacts {
   @media screen and (min-width: 768px) {
-    margin-left: 90px;
+    margin-left: 85px;
     padding: 21px 0;
   }
   @media screen and (min-width: 1200px) {
@@ -278,20 +281,18 @@
 .header__socials-item {
   position: relative;
   &:not(:last-child) {
-      margin-right: 20px;
-    }
-  
-    &:not(:last-child)::after {
-      content: '';
-      position: absolute;
-      width: 22px;
-      height: 1px;
-      left: 100%;
-      bottom: 50%;
-      transform: translate(-50% -50%);
-      background-color: rgba(33, 33, 33, 0.2);
-      transform: rotate(90deg);
-    }
+    margin-right: 20px;
+  }
+
+  &:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 1px;
+    left: 100%;
+    bottom: 50%;
+    transform: translate(-50% -50%);
+    background-color: rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
 }
-
-
