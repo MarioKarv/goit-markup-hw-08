@@ -84,7 +84,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .header__menu {
     display: none;
   }
@@ -208,7 +208,7 @@
 }
 
 .header__item:last-child {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     margin-bottom: 64px;
   }
 }
@@ -241,7 +241,7 @@
 }
 
 .header__mel {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     color: var(--primary-text-color);
     font-size: 24px;
     line-height: 1.17;
@@ -255,7 +255,7 @@
 .header__icons {
   fill: currentColor;
   margin-right: 8px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
   @media screen and (min-width: 1200px) {

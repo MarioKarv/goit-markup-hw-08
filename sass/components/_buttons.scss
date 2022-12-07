@@ -29,7 +29,7 @@
 .buttons__general {
   &:nth-child(3),
   &:nth-child(5) {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
       margin-right: 0;
     }
   }
